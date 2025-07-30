@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ RBF Video Selectie</title>
+  <style>
+    body {
+      background: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    select {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎥 DJ RBF Video Selectie</h1>
+  <select id="videoSelector" onchange="loadVideo(this.value)">
+    <option value='1GbXJmYlScFJ0ZgF3y_HW965zc1mGxL_T'>Video 1</option>
+    <option value='1Gf4ppWnEX7QnGhQ7Z1FPEpIspysget5w'>Video 2</option>
+    <option value='1Gej_bSDOSeGbFjjkXvX31COxskhNyVyG'>Video 3</option>
+    <option value='1GbmunPQm-M12lrplufa4Zu9nWufAIcgB'>Video 4</option>
+  </select>
+  <div>
+    <iframe id="videoPlayer" src="https://drive.google.com/file/d/1GbXJmYlScFJ0ZgF3y_HW965zc1mGxL_T/preview" allow="autoplay"></iframe>
+  </div>
+
+  <script>
+    function loadVideo(videoId) {
+      document.getElementById('videoPlayer').src = "https://drive.google.com/file/d/" + videoId + "/preview";
+    }
+  </script>
+</body>
+</html>
