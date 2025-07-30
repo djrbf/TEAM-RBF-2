@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+  text-shadow: 2px 2px 4px #000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url('flyer.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  margin-top: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 10px;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+
+a {
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Mobiele optimalisatie */
+@media (max-width: 600px) {
+  footer {
+    font-size: 14px;
+    padding: 15px 8px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  a {
+    display: inline-block;
+    margin: 4px 8px;
+  }
+}
