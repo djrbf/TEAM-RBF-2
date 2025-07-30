@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ RBF</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-512x512.png" type="image/png" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background: url('flyer.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .hamburger {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 20;
+    }
+
+    .bar {
+      height: 5px;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 10px #fff;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .video-links {
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 1rem;
+      border-radius: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 15;
+    }
+
+    .video-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .show {
+      display: flex !important;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hamburger" onclick="toggleMenu()">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+
+<div class="video-links" id="videoLinks">
+  <a href="https://youtube.com/@djrbf" target="_blank">YouTube</a>
+  <a href="https://www.tiktok.com/@djrbf" target="_blank">TikTok</a>
+</div>
+
+<nav>
+  <a href="https://djrbf.github.io/TEAM-RBF-2/">Home</a>
+  <a href="https://open.spotify.com/artist/JOUWLINK">Spotify</a>
+  <a href="https://soundcloud.com/JOUWNAAM">SoundCloud</a>
+</nav>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("videoLinks");
+    menu.classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>
