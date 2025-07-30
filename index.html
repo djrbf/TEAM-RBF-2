@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DJ RBF</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="icon" href="icon-512x512.png" type="image/png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ RBF</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-512x512.png" type="image/png" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background: url('flyer.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Zorg dat content boven de footer blijft */
+    .content {
+      min-height: 100%;
+      padding-bottom: 60px; /* Hoogte van nav-balk */
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Spotify</a>
-        <a href="#">SoundCloud</a>
-        <a href="#">YouTube</a>
-    </nav>
+  <div class="content">
+    <!-- Flyer is fullscreen achtergrond -->
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="https://spotify.com">Spotify</a>
+    <a href="https://soundcloud.com">SoundCloud</a>
+    <a href="https://youtube.com">YouTube</a>
+  </nav>
 </body>
 </html>
