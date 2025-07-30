@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ RBF</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-512x512.png" type="image/png" />
+</head>
+<body>
+  <div class="container">
+    <footer>
+      <h1>DJ RBF Livestream</h1>
+      <p>🔥 Volg DJ RBF op je favoriete platformen! 🔥</p>
+      <p>
+        <a href="https://www.tiktok.com/@official_rbf" target="_blank">TikTok</a> |
+        <a href="https://www.youtube.com/channel/UCJrq8Lo_s9vfXjlRyslHJbQ" target="_blank">YouTube</a> |
+        <a href="https://on.soundcloud.com/18Hsp4wveXCou9kQut" target="_blank">SoundCloud</a> |
+        <a href="https://open.spotify.com/artist/4kKGZ5yUNmh33hrvyA1vh2?si=I0NSlbnQTGqNDX5pG9wrYQ" target="_blank">Spotify</a>
+      </p>
+    </footer>
+
+    <div class="media-section">
+      <div class="video-player">
+        <h3>Laatste Video</h3>
+        <video controls poster="icon-512x512.png">
+          <source src="video.mp4" type="video/mp4">
+          Je browser ondersteunt geen HTML5 video.
+        </video>
+      </div>
+
+      <div class="upload-block">
+        <h3>Upload Foto</h3>
+        <input type="file" accept="image/*" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
