@@ -1,0 +1,50 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('flyer.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-shadow: 2px 2px 4px #000;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 10px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+a {
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive layout voor Android/mobiel */
+@media (max-width: 600px) {
+  footer {
+    font-size: 14px;
+    padding: 15px 8px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  a {
+    display: inline-block;
+    margin: 4px 8px;
+  }
+}
