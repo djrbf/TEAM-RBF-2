@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ RBF</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-512x512.png" type="image/png" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background: url('flyer.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 20px 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .dropdown-btn {
+      background-color: transparent;
+      color: #ffcc00;
+      font-size: 28px;
+      border: 2px solid #ffcc00;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { color: #ffcc00; border-color: #ffcc00; }
+      50% { color: #fff; border-color: #fff; }
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      border-radius: 8px;
+      min-width: 160px;
+    }
+
+    .dropdown-content a {
+      color: #ffcc00;
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button class="dropdown-btn">☰</button>
+    <div class="dropdown-content">
+      <a href="media.html">🎥 Media</a>
+    </div>
+  </div>
+
+  <div class="content"></div>
+
+  <footer>
+    <h2>☆ DJ RBF ☆</h2>
+    <p>
+      <a href="https://www.tiktok.com/@official_rbf" target="_blank">TikTok</a> |
+      <a href="https://www.youtube.com/channel/UCJrq8Lo_s9vfXjlRyslHJbQ" target="_blank">YouTube</a> |
+      <a href="https://on.soundcloud.com/18Hsp4wveXCou9kQut" target="_blank">SoundCloud</a> |
+      <a href="https://open.spotify.com/artist/4kKGZ5yUNmh33hrvyA1vh2?si=I0NSlbnQTGqNDX5pG9wrYQ" target="_blank">Spotify</a>
+    </p>
+  </footer>
+</body>
+</html>
