@@ -1,0 +1,14 @@
+
+{
+  "name": "DJ RBF",
+  "short_name": "DJRBF",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff0000",
+  "icons": [{
+    "src": "assets/icon-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
