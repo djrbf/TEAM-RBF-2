@@ -7,7 +7,14 @@
   <title>DJ RBF</title>
   <link rel="icon" href="icon-512x512.png" type="image/png">
   <style>
-    body, html {
+    body <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('serviceworker.js')
+      .then(reg => console.log('✅ Service Worker registered'))
+      .catch(err => console.error('❌ Service Worker failed', err));
+  }
+</script>
+<html {
       margin: 0;
       padding: 0;
       height: 100%;
