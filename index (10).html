@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ RBF</title>
+  <link rel="icon" href="icon-512x512.png" type="image/png">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: url('flyer.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: black;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .bottom-bar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 2000;
+    }
+
+    .menu-toggle div {
+      width: 35px;
+      height: 5px;
+      margin: 6px 0;
+      background: linear-gradient(to right, yellow, red);
+      border-radius: 5px;
+    }
+
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1500;
+    }
+
+    .video-overlay video {
+      margin: 10px 0;
+      max-width: 90%;
+      max-height: 30vh;
+    }
+
+    .close-btn {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="video-overlay" id="videoMenu">
+    <span class="close-btn" onclick="toggleMenu()">✕</span>
+    <video controls src="video/video1.mp4"></video>
+    <video controls src="video/video2.mp4"></video>
+    <video controls src="video/video3.mp4"></video>
+    <video controls src="video/video4.mp4"></video>
+  </div>
+
+  <div class="bottom-bar">
+    <a href="https://www.tiktok.com/@official_rbf?_t=ZG-8yTLEPR0mS8&_r=1" target="_blank">TikTok</a>
+    <a href="https://open.spotify.com/artist/4kKGZ5yUNmh33hrvyA1vh2?si=bF6HtofJTSKNO0Wm06f97g" target="_blank">Spotify</a>
+    <a href="https://on.soundcloud.com/S0YWXqv5G7mMGqhwkw" target="_blank">SoundCloud</a>
+    <a href="https://youtube.com/@dj_rbf?si=oZZBdlkKOQfKtaYZ" target="_blank">YouTube</a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('videoMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+
+</body>
+</html>
