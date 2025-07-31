@@ -1,7 +1,6 @@
 {
     "name": "DJ RBF",
     "short_name": "RBF",
-    "description": "Livestreams, House & Exclusive DJ Content by DJ RBF",
     "start_url": "/TEAM-RBF-2/index.html",
     "display": "standalone",
     "background_color": "#000000",
