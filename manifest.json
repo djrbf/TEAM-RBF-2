@@ -1,13 +1,14 @@
+
 {
-  "name": "DJ RBF",
-  "short_name": "RBF",
+  "name": "DJ RBF App",
+  "short_name": "DJ RBF",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#ff0000",
   "icons": [
     {
-      "src": "icon-512x512.png",
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
