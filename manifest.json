@@ -2,7 +2,7 @@
   "name": "DJ RBF App",
   "short_name": "DJ RBF",
   "description": "De offici\u00eble DJ RBF livestream en muzieksite",
-  ""start_url": "https://djrbf.github.io/TEAM-RBF-2/"
+  "start_url": "https://djrbf.github.io/TEAM-RBF-2/"
 
   "display": "standalone",
   "background_color": "#FF4400",
